@@ -1,5 +1,5 @@
-#!/bin/bash
+npm install -g npm@latest
+npm install pug-cli
 
-nix-shell
-
-echo "hi"
+tsc src/script.ts --outFile out/script.js
+pug src/index.pug --out out
