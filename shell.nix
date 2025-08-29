@@ -7,6 +7,7 @@ in
 pkgs.mkShell {
   buildInputs = [
     nodePackages.nodejs
+    pkgs.just
     pkgs.yarn
     pkgs.typescript
   ];
