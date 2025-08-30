@@ -2,6 +2,8 @@ start:
   nix-shell --run "just build"
 
 build:
+  rm -r out
+  mkdir out
   npm install -g npm@latest
   npm install core-js@latest
   npm install pug-cli -g
@@ -10,3 +12,6 @@ build:
   mv src/script.js out/script.js
   pug src/index.pug
   mv src/index.html out/index.html
+
+clean:
+  rm -r out
