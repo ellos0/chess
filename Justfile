@@ -2,7 +2,6 @@ start:
   nix-shell --run "just build"
 
 build:
-  rm -r out
   mkdir out
   npm install -g npm@latest
   npm install core-js@latest
