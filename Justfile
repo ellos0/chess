@@ -7,11 +7,11 @@ build:
   npm install core-js@latest
   npm install pug-cli -g
 
-  tsc --module es2015 --target es2015 src/script.ts
-  mv src/script.js out/script.js
-  pug src/index.pug
-  mv src/index.html out/index.html
-  cp src/style.css out/style.css
+  tsc --module es2015 --target es2015 client/script.ts
+  mv client/script.js out/script.js
+  pug client/index.pug
+  mv client/index.html out/index.html
+  cp client/style.css out/style.css
 
 clean:
   rm -r out
