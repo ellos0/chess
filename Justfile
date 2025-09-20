@@ -13,4 +13,4 @@ build:
   cp client/style.css out/style.css
 
 clean:
-  rm -r out
+  rm -rf out
